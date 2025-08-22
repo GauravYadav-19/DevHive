@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevHive - Learn HTML</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/devhive-logo.png" alt="DevHive Logo" class="logo-img" />
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="tutorial-content">
+  <h1>HTML Tutorial for Beginners</h1>
+  <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of a webpage using elements represented by tags like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, etc.</p>
+
+    <h2>🌐 Basic Structure of an HTML Document</h2>
+  <p>Every HTML page starts with a basic structure. Here's the template:</p>
+  <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt; 
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+
+    <h2>🧱 Headings and Paragraphs</h2>
+  <p>HTML provides 6 heading levels from <code>&lt;h1&gt;</code> (largest) to <code>&lt;h6&gt;</code> (smallest).</p>
+  <pre><code>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph describing something important.&lt;/p&gt;
+  </code></pre>
+
+
+    <h2>🔗 Links and 🖼️ Images</h2>
+  <p>Use the <code>&lt;a&gt;</code> tag to link to pages and <code>&lt;img&gt;</code> to display images.</p>
+  <pre><code>
+&lt;a href="https://devhive.com"&gt;Visit DevHive&lt;/a&gt;
+
+&lt;img src="https://via.placeholder.com/150" alt="Placeholder Image"&gt;
+  </code></pre>
+
+    <h2>📋 Lists in HTML</h2>
+  <p>There are two types of lists:</p>
+  <ul>
+    <li><code>&lt;ul&gt;</code> – Unordered List</li>
+    <li><code>&lt;ol&gt;</code> – Ordered List</li>
+  </ul>
+  <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install VS Code&lt;/li&gt;
+  &lt;li&gt;Write your first HTML page&lt;/li&gt;
+&lt;/ol&gt;
+  </code></pre>
+
+    <h2>📊 Tables</h2>
+  <p>Tables are used to display data in rows and columns.</p>
+  <pre><code>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Gaurav&lt;/td&gt;
+    &lt;td&gt;21&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+  </code></pre>
+
+    <h2>📝 HTML Forms</h2>
+  <p>Forms are used to collect user input.</p>
+  <pre><code>
+&lt;form&gt;
+  Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
+  Email: &lt;input type="email" name="email"&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+  </code></pre>
+
+    <h2>📌 Semantic Elements</h2>
+  <p>Semantic tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> describe the meaning of content.</p>
+  <pre><code>
+&lt;header&gt;My Site Header&lt;/header&gt;
+&lt;nav&gt;Navigation Links&lt;/nav&gt;
+&lt;section&gt;Main content&lt;/section&gt;
+&lt;footer&gt;© 2025 DevHive&lt;/footer&gt;
+  </code></pre>
+
+    <div class="next-link">
+      <a href="css.html" class="btn-primary">Next: Learn CSS →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 DevHive. Made with ❤️ for learners.</p>
+  </footer>
+</body>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent =
+      document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  });
+</script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevHive - Blogs</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+<div class="logo">
+  <a href="index.html">
+    <img src="assets/devhive-logo.png" alt="DevHive Logo" class="logo-img" />
+  </a>
+</div>
+    <nav>
+      <div class="logo"><a href="index.html">DevHive</a></div>
+      <ul class="nav-links">
+        <button id="theme-toggle">🌙</button>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blogs">
+      <h1>Developer Blogs</h1>
+      <div class="blog-list">
+        <div class="blog-card">
+          <h2>What is HTML and Why It Matters?</h2>
+          <p>HTML is the backbone of web development. Learn how it structures every website and how you can get started.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog-card">
+          <h2>Getting Started with Python</h2>
+          <p>Python is one of the most beginner-friendly languages. Explore basic syntax, logic, and where to apply it.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="blog-card">
+          <h2>Frontend vs Backend Development</h2>
+          <p>Confused about frontend and backend? Here's a simple comparison with roles, tools, and learning paths.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DevHive. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  });
+</script>
+</html>

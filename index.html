@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevHive - Learn to Code</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+<div class="logo">
+  <a href="index.html">
+    <img src="assets/devhive-logo.png" alt="DevHive Logo" class="logo-img" />
+  </a>
+</div>
+
+    <nav>
+      <ul class="nav-links">
+        <button id="theme-toggle">🌙</button>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+    </nav>
+</header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Learn. Build. Grow.</h1>
+      <p>DevHive is your launchpad to becoming a skilled developer.</p>
+      <a href="tutorials.html" class="btn-primary">Start Learning</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>What You'll Find</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>📘 Beginner Tutorials</h3>
+        <p>Step-by-step learning for HTML, CSS, JS, Python, C++ and more.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🛠️ Code Playground</h3>
+        <p>Practice and experiment with real-time code execution.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🧠 Smart Blogs</h3>
+        <p>Learn from experiences, tips, and practical dev insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 DevHive.</p>
+  </footer>
+</body>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  });
+</script>
+</html>
