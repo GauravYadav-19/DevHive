@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevHive | CSS Tutorial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎨 CSS Tutorial</h1>
+    <p>Learn how to style your websites with CSS — from basics to advanced concepts.</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Introduction -->
+    <section id="intro">
+      <h2>What is CSS?</h2>
+      <p>
+        CSS (Cascading Style Sheets) is used to style and layout web pages.  
+        It controls the colors, fonts, spacing, positioning, and even animations of elements on a webpage.
+      </p>
+      <pre><code>
+/* Example */
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+      </code></pre>
+    </section>
+
+    <!-- Section 2: Syntax -->
+    <section id="syntax">
+      <h2>CSS Syntax</h2>
+      <p>A CSS rule is made of a <strong>selector</strong> and a <strong>declaration block</strong>.</p>
+      <pre><code>
+selector {
+  property: value;
+}
+      </code></pre>
+      <p><b>Example:</b></p>
+      <pre><code>
+h1 {
+  color: red;
+  text-align: center;
+}
+      </code></pre>
+    </section>
+
+    <!-- Section 3: Ways to Add CSS -->
+    <section id="ways">
+      <h2>Ways to Apply CSS</h2>
+      <ul>
+        <li><b>Inline CSS</b> – inside the HTML element</li>
+        <li><b>Internal CSS</b> – inside a &lt;style&gt; tag in the HTML head</li>
+        <li><b>External CSS</b> – in a separate .css file (recommended)</li>
+      </ul>
+      <pre><code>
+<!-- Inline -->
+<p style="color: blue;">Hello CSS</p>
+
+<!-- Internal -->
+<style>
+  p { color: green; }
+</style>
+
+<!-- External -->
+<link rel="stylesheet" href="style.css">
+      </code></pre>
+    </section>
+
+    <!-- Section 4: Selectors -->
+    <section id="selectors">
+      <h2>CSS Selectors</h2>
+      <p>Selectors are used to "select" HTML elements you want to style.</p>
+      <ul>
+        <li><b>Element Selector:</b> <code>p { color: red; }</code></li>
+        <li><b>ID Selector:</b> <code>#title { font-size: 30px; }</code></li>
+        <li><b>Class Selector:</b> <code>.highlight { background: yellow; }</code></li>
+      </ul>
+    </section>
+
+    <!-- Section 5: Colors & Backgrounds -->
+    <section id="colors">
+      <h2>Colors & Backgrounds</h2>
+      <pre><code>
+body {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: darkblue;
+}
+      </code></pre>
+    </section>
+
+    <!-- Section 6: Box Model -->
+    <section id="box-model">
+      <h2>CSS Box Model</h2>
+      <p>Every element in CSS is a box, consisting of:</p>
+      <ul>
+        <li>Content</li>
+        <li>Padding</li>
+        <li>Border</li>
+        <li>Margin</li>
+      </ul>
+      <pre><code>
+div {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 10px;
+}
+      </code></pre>
+    </section>
+
+    <!-- Section 7: Responsive Design -->
+    <section id="responsive">
+      <h2>Responsive Design</h2>
+      <p>Responsive CSS makes your website look good on all devices.</p>
+      <pre><code>
+@media (max-width: 600px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+      </code></pre>
+    </section>
+
+    <!-- Section 8: Next Steps -->
+    <section id="next">
+      <h2>Next Steps</h2>
+      <p>
+        ✅ Learn Flexbox & Grid  
+        ✅ Explore CSS Animations  
+        ✅ Try building responsive layouts  
+      </p>
+      <p>Check out <a href="projects.html">Projects</a> to practice what you learned.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 DevHive. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
