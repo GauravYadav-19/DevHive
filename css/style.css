@@ -4,12 +4,11 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to right, #0e4839, #fdfce7);
   color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ========== LOGO ========== */
-.logo img.logo-img {
-  height: 40px;
-  vertical-align: middle;
+html, body {
+  height: 100%;
 }
 
 /* ========== HEADER ========== */
@@ -19,6 +18,11 @@ body {
   align-items: center;
   background-color: #05102a;
   padding: 1rem 2rem;
+}
+
+.logo img.logo-img {
+  height: 40px;
+  vertical-align: middle;
 }
 
 .logo a {
@@ -34,13 +38,13 @@ body {
   gap: 1.5rem;
 }
 
-.nav-links li a {
+.nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
-.nav-links li a:hover {
+.nav-links a:hover {
   text-decoration: underline;
 }
 
@@ -65,7 +69,7 @@ body {
 /* ========== BUTTON ========== */
 .btn-primary {
   background-color: white;
-  color: linear-gradient(to right, #d40000, #0a00cc);
+  color: #05102a;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
@@ -77,11 +81,7 @@ body {
   background-color: #f0f0f0;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
+/* ========== LAYOUT CONTAINER ========== */
 .page-container {
   display: flex;
   flex-direction: column;
@@ -143,7 +143,7 @@ footer {
 }
 
 .card, .tutorial-card {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -193,7 +193,7 @@ footer {
   background: #fff;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: left;
 }
 
@@ -202,52 +202,43 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.blog-card p {
-  margin-bottom: 1rem;
-}
-
 .blog-card a {
   text-decoration: none;
   color: #0078d4;
   font-weight: bold;
 }
 
-/* ========== TUTORIAL CONTENT PAGE (html.html etc.) ========== */
+/* ========== TUTORIAL CONTENT PAGE (HTML, CSS, JS) ========== */
 .tutorial-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 3rem auto;
   padding: 2rem;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
-/* Headings Style */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-h1 {
+/* Headings */
+.tutorial-content h1 {
   font-size: 2.5rem;
   color: #0c4fb0;
   margin-bottom: 1rem;
 }
 
-h2 {
+.tutorial-content h2 {
   font-size: 1.8rem;
   color: #0078d4;
   margin-top: 2.5rem;
 }
 
-h3 {
+.tutorial-content h3 {
   font-size: 1.4rem;
   color: #005fa3;
   margin-top: 2rem;
 }
 
-/* Code blocks */
+/* Code Blocks */
 pre {
   background-color: #f4f4f4;
   border-left: 4px solid #0078d4;
@@ -263,6 +254,7 @@ code {
   color: #111;
 }
 
+/* Lists & Tables */
 .tutorial-content ul {
   padding-left: 1.5rem;
   margin-top: 0.5rem;
@@ -293,7 +285,7 @@ th {
   margin-top: 2rem;
 }
 
-/* ========== Theme Toggle Button ========== */
+/* ========== THEME TOGGLE ========== */
 .theme-btn {
   background: none;
   border: none;
@@ -307,71 +299,84 @@ th {
   transform: scale(1.1);
 }
 
-/* ================== DARK MODE ================== */
-
+/* ========== DARK MODE ========== */
 body.dark-mode {
   background-color: #1e1e1e;
   color: #f0f0f0;
 }
 
-/* Header and Nav */
-body.dark-mode .header {
-  background-color: #111827;
-}
-
-body.dark-mode .nav-links a {
-  color: #f0f0f0;
-}
-
-/* Hero Section */
+body.dark-mode .header { background-color: #111827; }
+body.dark-mode .nav-links a { color: #f0f0f0; }
 body.dark-mode .hero {
   background: linear-gradient(to right, #111827, #1f2937);
   color: #f0f0f0;
 }
-
-/* Buttons */
 body.dark-mode .btn-primary {
   background-color: #f0f0f0;
   color: #1e1e1e;
 }
+body.dark-mode .btn-primary:hover { background-color: #ddd; }
 
-body.dark-mode .btn-primary:hover {
-  background-color: #ddd;
-}
-
-/* Cards and Containers */
 body.dark-mode .feature-card,
 body.dark-mode .tutorial-card,
 body.dark-mode .blog-card,
 body.dark-mode .tutorial-content {
   background-color: #2c2c2c;
   color: #f0f0f0;
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 16px rgba(255,255,255,0.05);
 }
 
-/* Footer */
 body.dark-mode footer {
   background-color: #111;
   color: #ccc;
 }
 
-/* Code Blocks */
 body.dark-mode pre {
   background-color: #2e2e2e;
   border-left-color: #f0f0f0;
 }
 
-body.dark-mode code {
-  color: #ddd;
+body.dark-mode code { color: #ddd; }
+
+/* ========== CSS & JS Tutorial Pages ========== */
+.tutorial-content h1 {
+  font-size: 2.2rem;
+  color: #0c4fb0; /* Same as HTML page */
+  margin-bottom: 1rem;
 }
 
-body,
-.hero,
-.feature-card,
-.tutorial-card,
-.blog-card,
-.tutorial-content,
-footer {
-  transition: background-color 0.3s ease, color 0.3s ease;
+.tutorial-content h2 {
+  font-size: 1.6rem;
+  color: #0078d4;
+  margin-top: 2rem;
 }
 
+.tutorial-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.tutorial-content pre {
+  background-color: #f4f4f4;
+  border-left: 4px solid #0078d4;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.tutorial-content code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.tutorial-content ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.tutorial-content li {
+  margin-bottom: 0.5rem;
+}
