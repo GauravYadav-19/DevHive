@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Tutorial - DevHive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class = "tutorial-content">
+  <header>
+    <h1>🐍 Python Tutorial</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="html_page.html">HTML</a>
+      <a href="css_page.html">CSS</a>
+      <a href="js_page.html">JavaScript</a>
+      <a href="python_page.html" class="active">Python</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INTRO -->
+    <section class="intro">
+      <h2>What is Python?</h2>
+      <p>
+        Python is a popular, beginner-friendly, high-level programming language 
+        known for its simple syntax and wide applications in <b>web development</b>, 
+        <b>data science</b>, <b>artificial intelligence</b>, <b>automation</b>, 
+        <b>software development</b>, and more.
+      </p>
+    </section>
+
+    <!-- WHY PYTHON -->
+    <section class="content">
+      <h2>🚀 Why Learn Python?</h2>
+      <ul>
+        <li>Easy to learn and read – perfect for beginners.</li>
+        <li>Huge community and libraries for everything.</li>
+        <li>Cross-platform and open-source.</li>
+        <li>Applications in AI, ML, and Data Science.</li>
+      </ul>
+    </section>
+
+    <!-- BASICS -->
+    <section class="content">
+      <h2>⚡ Python Basics</h2>
+      <h3>Hello World</h3>
+      <pre>
+print("Hello, World!")
+      </pre>
+
+      <h3>Variables</h3>
+      <pre>
+x = 10
+name = "Gaurav"
+pi = 3.14
+      </pre>
+
+      <h3>Data Types</h3>
+      <pre>
+integer = 42
+floating = 3.14
+boolean = True
+string = "DevHive"
+list_data = [1, 2, 3]
+tuple_data = (1, 2, 3)
+set_data = {1, 2, 3}
+dict_data = {"name": "Gaurav", "age": 21}
+      </pre>
+    </section>
+
+    <!-- CONDITIONS & LOOPS -->
+    <section class="content">
+      <h2>🔁 Control Flow</h2>
+      <h3>If-Else</h3>
+      <pre>
+x = 7
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is less than or equal to 5")
+      </pre>
+
+      <h3>Loops</h3>
+      <pre>
+# For loop
+for i in range(5):
+    print(i)
+
+# While loop
+n = 3
+while n > 0:
+    print(n)
+    n -= 1
+      </pre>
+    </section>
+
+    <!-- FUNCTIONS -->
+    <section class="content">
+      <h2>📌 Functions</h2>
+      <pre>
+def greet(name):
+    return "Hello, " + name
+
+print(greet("DevHive"))
+      </pre>
+    </section>
+
+    <!-- OOP -->
+    <section class="content">
+      <h2>🏗️ Object-Oriented Programming</h2>
+      <pre>
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def introduce(self):
+        print(f"My name is {self.name}, and I am {self.age} years old.")
+
+s1 = Student("Gaurav", 21)
+s1.introduce()
+      </pre>
+    </section>
+
+    <!-- MODULES & LIBRARIES -->
+    <section class="content">
+      <h2>📚 Modules & Libraries</h2>
+      <pre>
+import math
+import random
+
+print(math.sqrt(16))   # 4.0
+print(random.randint(1, 10))  # Random number between 1 and 10
+      </pre>
+    </section>
+
+    <!-- FILE HANDLING -->
+    <section class="content">
+      <h2>📂 File Handling</h2>
+      <pre>
+# Writing to a file
+with open("sample.txt", "w") as f:
+    f.write("Hello DevHive!")
+
+# Reading from a file
+with open("sample.txt", "r") as f:
+    content = f.read()
+    print(content)
+      </pre>
+    </section>
+
+    <!-- NEXT STEPS -->
+    <section class="content">
+      <h2>✨ Next Steps</h2>
+      <p>
+        After mastering basics, explore:
+        <ul>
+          <li>Functions & Modules in detail</li>
+          <li>OOP & Advanced Python</li>
+          <li>Libraries like <b>NumPy, pandas, Matplotlib</b></li>
+          <li>Frameworks like <b>Django, Flask</b></li>
+          <li>AI/ML with <b>TensorFlow, PyTorch</b></li>
+        </ul>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DevHive. Learn. Build. Innovate.</p>
+  </footer>
+  </div>
+</body>
+</html>
