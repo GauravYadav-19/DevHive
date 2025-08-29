@@ -380,3 +380,75 @@ body.dark-mode code { color: #ddd; }
 .tutorial-content li {
   margin-bottom: 0.5rem;
 }
+
+/* ======== GLOBAL RESET ======== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #2c3e50, #fdfce7);
+  color: #333;
+}
+
+/* ======== HEADER ======== */
+header {
+  background: #0e4839;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: #f1c40f;
+}
+
+/* ======== MAIN CONTENT ======== */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #0e4839;
+  border-bottom: 2px solid #0e4839;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+pre {
+  background: #1e1e1e;
+  color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background: #0e4839;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
