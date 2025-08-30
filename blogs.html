@@ -1,61 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevHive - Blogs</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevHive Blogs</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-<div class="logo">
-  <a href="index.html">
-    <img src="assets/devhive-logo.png" alt="DevHive Logo" class="logo-img" />
-  </a>
-</div>
+    <h1>DevHive - Blogs</h1>
     <nav>
-      <div class="logo"><a href="index.html">DevHive</a></div>
-      <ul class="nav-links">
-        <button id="theme-toggle">🌙</button>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tutorials.html">Tutorials</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="html_page.html">HTML</a>
+      <a href="css_page.html">CSS</a>
+      <a href="js_page.html">JavaScript</a>
+      <a href="python_page.html">Python</a>
+      <a href="cpp_page.html">C++</a>
+      <a href="blogs.html" class="active">Blogs</a>
     </nav>
   </header>
 
   <main>
-    <section class="blogs">
-      <h1>Developer Blogs</h1>
-      <div class="blog-list">
-        <div class="blog-card">
-          <h2>What is HTML and Why It Matters?</h2>
-          <p>HTML is the backbone of web development. Learn how it structures every website and how you can get started.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-          <h2>Getting Started with Python</h2>
-          <p>Python is one of the most beginner-friendly languages. Explore basic syntax, logic, and where to apply it.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-          <h2>Frontend vs Backend Development</h2>
-          <p>Confused about frontend and backend? Here's a simple comparison with roles, tools, and learning paths.</p>
-          <a href="#">Read More</a>
+    <!-- FEATURED BLOG -->
+    <section class="featured-blog">
+      <img src="https://via.placeholder.com/1000x300" alt="Featured Blog">
+      <div class="featured-content">
+        <h2>🚀 Why C++ Still Dominates Competitive Programming</h2>
+        <p>
+          If you’ve ever participated in coding contests, you already know C++ is the undisputed king.  
+          Its speed, memory control, and the <b>Standard Template Library (STL)</b> make it the ultimate choice 
+          for competitive programmers. But what exactly gives it this edge over other modern languages?
+        </p>
+        <p>
+          In this blog, we explore the power of STL, compare C++ to Python and Java, and provide a roadmap 
+          to master C++ for contests like <b>Codeforces</b>, <b>LeetCode</b>, and <b>ICPC</b>.
+        </p>
+        <a href="#">Read Full Article →</a>
+      </div>
+    </section>
+
+    <!-- ALL BLOGS -->
+    <h2 class="section-heading">Latest Articles</h2>
+    <section class="blog-container">
+      
+      <!-- Blog 1 -->
+      <div class="blog-card">
+        <img src="https://via.placeholder.com/400x200" alt="Blog Image">
+        <div class="blog-content">
+          <h3>🎨 Mastering CSS Flexbox & Grid</h3>
+          <p class="meta">By <b>DevHive Team</b> | July 20, 2025 | Tags: <span>#CSS</span> <span>#WebDesign</span></p>
+          <p>
+            Responsive design is a necessity, not a luxury.  
+            Flexbox and Grid are two modern layout systems in CSS that simplify web design drastically.  
+            With Flexbox, aligning items becomes effortless, and Grid allows you to build magazine-style layouts.  
+          </p>
+          <p>
+            In this article, we cover practical examples, common mistakes beginners make, 
+            and how to combine Flexbox and Grid for maximum efficiency.
+          </p>
+          <a href="#">Read More →</a>
         </div>
       </div>
+
+      <!-- Blog 2 -->
+      <div class="blog-card">
+        <img src="https://via.placeholder.com/400x200" alt="Blog Image">
+        <div class="blog-content">
+          <h3>🐍 Python vs JavaScript: Which Should You Learn First?</h3>
+          <p class="meta">By <b>DevHive Editors</b> | July 12, 2025 | Tags: <span>#Python</span> <span>#JavaScript</span></p>
+          <p>
+            Python and JavaScript are two of the most popular programming languages in the world.  
+            But as a beginner, deciding which one to learn first can feel overwhelming.  
+            Python excels in <b>AI, ML, and data science</b>, while JavaScript powers the web.  
+          </p>
+          <p>
+            In this blog, we break down learning curves, career opportunities, 
+            and project use cases to help you make the right choice for your goals.
+          </p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="blog-card">
+        <img src="https://via.placeholder.com/400x200" alt="Blog Image">
+        <div class="blog-content">
+          <h3>💡 Debugging Like a Pro</h3>
+          <p class="meta">By <b>Gaurav Yadav</b> | June 30, 2025 | Tags: <span>#Debugging</span> <span>#BestPractices</span></p>
+          <p>
+            Every programmer faces bugs, but the difference between a good developer and a great one  
+            is how efficiently they debug. In this post, we discuss a systematic approach to debugging,  
+            from using IDE tools to strategic console logging.  
+          </p>
+          <p>
+            You’ll also learn about the <b>rubber duck method</b>, how to isolate issues, 
+            and common pitfalls in large codebases.
+          </p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Blog 4 -->
+      <div class="blog-card">
+        <img src="https://via.placeholder.com/400x200" alt="Blog Image">
+        <div class="blog-content">
+          <h3>📚 Top 10 Resources to Learn Data Structures & Algorithms</h3>
+          <p class="meta">By <b>Harshit Yadav</b> | June 18, 2025 | Tags: <span>#DSA</span> <span>#InterviewPrep</span></p>
+          <p>
+            Preparing for coding interviews? DSA is your golden ticket.  
+            But with so many resources out there, it’s easy to get lost.  
+            We’ve curated the top 10 books, online platforms, and practice sites  
+            that every aspiring software engineer should know.  
+          </p>
+          <p>
+            Whether you’re a beginner or an advanced coder, this guide will help you 
+            focus on the right material and avoid wasting time.
+          </p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
     </section>
   </main>
 
   <footer>
-    <p>© 2025 DevHive. All rights reserved.</p>
+    <p>© 2025 DevHive. All Rights Reserved.</p>
   </footer>
 </body>
-<script>
-  const toggleBtn = document.getElementById('theme-toggle');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-  });
-</script>
 </html>
